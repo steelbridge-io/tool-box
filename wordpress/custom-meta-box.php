@@ -22,12 +22,12 @@ function chris_meta_callback( $post ) {
     $chris_stored_meta = get_post_meta( $post->ID );
     ?>
 
-    <p>
+
         <label for="meta-text" class="chris-row-title"><?php _e( 'Example Text Input', 'chris-textdomain' )?></label>
         <input type="text" name="meta-text" id="meta-text" value="<?php if ( isset ( $chris_stored_meta['meta-text'] ) ) echo $chris_stored_meta['meta-text'][0]; ?>" />
-    </p>
+    <
 
-    <p>
+
         <span class="chris-row-title"><?php _e( 'Example Checkbox Input', 'chris-textdomain' )?></span>
     <div class="chris-row-content">
         <label for="meta-checkbox">
@@ -39,9 +39,9 @@ function chris_meta_callback( $post ) {
             <?php _e( 'Another checkbox', 'chris-textdomain' )?>
         </label>
     </div>
-    </p>
 
-    <p>
+
+
         <span class="chris-row-title"><?php _e( 'Example Radio Buttons', 'chris-textdomain' )?></span>
     <div class="chris-row-content">
         <label for="meta-radio-one">
@@ -53,31 +53,31 @@ function chris_meta_callback( $post ) {
             <?php _e( 'Radio Option #2', 'chris-textdomain' )?>
         </label>
     </div>
-    </p>
 
-    <p>
+
+
         <label for="meta-select" class="chris-row-title"><?php _e( 'Example Select Input', 'chris-textdomain' )?></label>
         <select name="meta-select" id="meta-select">
             <option value="select-one" <?php if ( isset ( $chris_stored_meta['meta-select'] ) ) selected( $chris_stored_meta['meta-select'][0], 'select-one' ); ?>><?php _e( 'One', 'chris-textdomain' )?></option>';
             <option value="select-two" <?php if ( isset ( $chris_stored_meta['meta-select'] ) ) selected( $chris_stored_meta['meta-select'][0], 'select-two' ); ?>><?php _e( 'Two', 'chris-textdomain' )?></option>';
         </select>
-    </p>
 
-    <p>
+
+
         <label for="meta-textarea" class="chris-row-title"><?php _e( 'Example Textarea Input', 'chris-textdomain' )?></label>
         <textarea name="meta-textarea" id="meta-textarea"><?php if ( isset ( $chris_stored_meta['meta-textarea'] ) ) echo $chris_stored_meta['meta-textarea'][0]; ?></textarea>
-    </p>
 
-    <p>
+
+
         <label for="meta-color" class="chris-row-title"><?php _e( 'Color Picker', 'chris-textdomain' )?></label>
         <input name="meta-color" type="text" value="<?php if ( isset ( $chris_stored_meta['meta-color'] ) ) echo $chris_stored_meta['meta-color'][0]; ?>" class="meta-color" />
-    </p>
 
-    <p>
+
+
         <label for="meta-image" class="chris-row-title"><?php _e( 'Example File Upload', 'chris-textdomain' )?></label>
         <input type="text" name="meta-image" id="meta-image" value="<?php if ( isset ( $chris_stored_meta['meta-image'] ) ) echo $chris_stored_meta['meta-image'][0]; ?>" />
         <input type="button" id="meta-image-button" class="button" value="<?php _e( 'Choose or Upload an Image', 'chris-textdomain' )?>" />
-    </p>
+
 
 
     <?php
