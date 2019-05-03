@@ -1,13 +1,13 @@
 <?php
-$wp_customize->add_setting( 'basic_text_bawx', array(
+$wp_customize->add_setting( 'precious_text_bawx', array(
 	'capability' => 'edit_theme_options',
-	'default' => 'Smooth content. Dripping goodness.',
+	'default' => 'Put the fucking text in the input.',
 	'sanitize_callback' => 'sanitize_text_field',
 ) );
 
-$wp_customize->add_control( 'basic_text_bawx', array(
+$wp_customize->add_control( 'precious_text_bawx', array(
 	'type' => 'text',
-	'section' => 'your_custom_bitch_ass_section',
-	'label' => __( 'It will put the text here.' ),
-	'description' => __( 'Or it gets the hose.' ),
+	'section' => 'great_big_fat_section',
+	'label' => __( 'It puts the text here. It does this whenever it is told.' ),
+	'description' => __( 'Or it will get the hose.' ),
 ) );
