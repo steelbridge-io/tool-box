@@ -1,0 +1,9 @@
+/* This scss works with bootstrap. Allows equal hight columns. Works with sidbar.php for example.*/
+
+.survey-content-area.row{
+  overflow: hidden;
+  [class*="col-"]{
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+  }
+}
